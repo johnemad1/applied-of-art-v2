@@ -10,7 +10,7 @@ const scheduleSchema = new mongoose.Schema({
     required: [true, 'the description must be provided'],
   },
   departmentId: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: mongoose.Types.ObjectId,
     ref: 'Department',
     required: [true, 'Must belong to the department'],
   },
