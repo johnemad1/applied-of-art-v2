@@ -20,12 +20,12 @@ const MemberSchema = new mongoose.Schema(
       // required: [true, 'Please provide an image'], // Uncomment if image is required
     },
     departmentId: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: mongoose.Types.ObjectId,
       ref: 'Department',
       required: [true, 'Must belong to a department'],
     },
     userId: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: mongoose.Types.ObjectId,
       ref: 'User',
       required: [true, 'Must be an existing user'],
     },
