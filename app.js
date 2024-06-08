@@ -38,12 +38,12 @@ const schedulesRouter = require('./routes/scheduleRoutes');
 
 app.use(
   cors({
-    // origin: 'https://faculty-of-applied-arts.netlify.app', // your frontend URL
-    // methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    // credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+    origin: 'https://66640c9634c3cf9c0b12432d--beamish-frangollo-89f38b.netlify.app/', // your frontend URL
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 
-     origin: 'http://localhost:3000',
-     credentials: true,
+     // origin: 'http://localhost:3000',
+     // credentials: true,
   }),
 );
 // compress all responses
